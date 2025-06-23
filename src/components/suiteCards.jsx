@@ -70,7 +70,7 @@ export default function SuiteCards() {
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-6 lg:gap-6 p-6">
         {suiteData.map((card, idx) => (
           <a key={idx} href={card.link} className="relative group">
-            {/* Main Card */}
+         
             <div
               className={`
               relative z-10 rounded-xl shadow-lg overflow-hidden 
@@ -106,14 +106,14 @@ export default function SuiteCards() {
               </div>
             </div>
 
-            {/* Slide-down CTA */}
+        
             <div
               className={`
     absolute left-0 w-full h-[50px] z-0 
-    py-4 font-medium text-[20px] text-center flex items-center gap-2 justify-center text-white text-sm rounded-b-xl ${card.tourColor} block top-[97%] sm:translate-y-[-100%] sm:group-hover:translate-y-0 sm:transition-transform sm:duration-300 sm:opacity-0 sm:group-hover:opacity-100
+    py-4 font-medium text-[20px] text-center flex items-center gap-2 justify-center ${card.textClr} text-sm rounded-b-xl ${card.bgColor} block top-[97%] sm:translate-y-[-100%] sm:group-hover:translate-y-0 sm:transition-transform sm:duration-300 sm:opacity-0 sm:group-hover:opacity-100
   `}
             >
-              Take a tour <FaArrowRightLong className="size-5 mt-1"/>
+              Take a tour <FaArrowRightLong className="size-5 mt-1" />
             </div>
           </a>
         ))}

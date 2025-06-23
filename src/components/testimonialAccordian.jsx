@@ -48,7 +48,7 @@ export default function TestimonialAccordion() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="flex p-6 flex-col items-center w-[90%] m-auto justify-center bg-white rounded-[40px] border border-gray-200 overflow-x-auto">
+    <section className="flex p-6 flex-col items-center w-[95%] m-auto justify-center bg-white rounded-[40px] border border-gray-200 overflow-x-auto">
       <div className="mb-8 w-full">
         <h1 className="text-3xl md:text-4xl font-semibold text-center">
           Built to power your entire workplace

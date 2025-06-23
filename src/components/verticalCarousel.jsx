@@ -8,7 +8,7 @@ const slideData = [
     id: '01',
     title: 'Run accurate payroll, automatically.',
     desc: 'Unify your HR and payroll data to automate changes for new hires, raises, and tax adjustments — with a unified employee record, payroll information is always up to date.',
-    bg: 'bg-white', // Light background
+    bg: 'bg-white',
     image: 'https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67dc1986de3f500ad54276b6_payrol-value-prop-1%20(1).webp',
     author: {
       name: 'Elymi Peralta',
@@ -24,7 +24,7 @@ const slideData = [
     id: '02',
     title: 'Payroll that works the way you do.',
     desc: 'Adjust pay schedules, earnings types, deductions, and more without added complexity — and run off-cycle payroll without extra fees.',
-    bg: 'bg-[#f0f4ff]', // Soft blue
+    bg: 'bg-[#f0f4ff]',
     image: 'https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67dc1cc09d9f7ba0f5b873d4_payroll-value-prop-2.webp',
     author: {
       name: 'OpenWorks',
@@ -37,14 +37,14 @@ const slideData = [
     id: '03',
     title: 'Run reports fast — without breaking a sweat.',
     desc: 'Effortless reporting gives you all the data you need at your fingertips — and cuts down on reporting and auditing headaches.',
-    bg: 'bg-[#e7fbe9]', // Light green
+    bg: 'bg-[#e7fbe9]',
     image: 'https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67dc241711ef095624da4cc2_payroll-value-prop-03.webp',
   },
   {
     id: '04',
     title: 'Let employees self-serve everything they need.',
     desc: 'From seamless onboarding to at-a-glance tax elections, Lattice Payroll gives employees clarity into their compensation with an intuitive, modern experience.',
-    bg: 'bg-[#fff7ed]', // Light peach
+    bg: 'bg-[#fff7ed]',
     image: 'https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67ead0cd8e09a19fdbcf6ad9_payroll-value-prop-04%20(2).webp',
   },
 ]
@@ -69,7 +69,6 @@ export default function VerticalCarousel() {
 
   return (
     <div className="relative h-screen overflow-hidden">
-      {/* Fixed Number Indicator */}
       <div className="absolute top-6 left-6 z-10 hidden sm:flex flex-col space-y-2 text-sm font-medium">
         {slideData.map((_, idx) => (
           <span
@@ -83,7 +82,6 @@ export default function VerticalCarousel() {
         ))}
       </div>
 
-      {/* Scrollable Section with Hidden Scrollbar */}
       <div
         ref={containerRef}
         className="h-full overflow-y-scroll snap-y snap-mandatory
