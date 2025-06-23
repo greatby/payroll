@@ -158,8 +158,11 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
   return (
-    <nav ref={navRef} className="relative z-50 shadow-sm">
-      <div className="flex flex-wrap md:flex-nowrap justify-between items-center p-4 bg-white">
+    <nav
+      ref={navRef}
+      className="fixed z-[9999] w-full border-b border-solid border-b-[#11110d1a] bg-[#ffffffa8] px-5 backdrop-blur-[3px]"
+    >
+      <div className="flex flex-wrap md:flex-nowrap justify-between items-center p-4">
         <div className="text-xl font-bold">Payroll</div>
         <button
           className="md:hidden block"

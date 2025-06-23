@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes scrollY {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.animate-scroll-y {
+  animation: scrollY 10s linear infinite;
+}
+
+
+
+
+
+
