@@ -1,6 +1,6 @@
 import Footer from "./components/footer";
 import CallToActionSection from "./components/hero";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import SuiteCards from "./components/suiteCards";
 import TestimonialAccordion from "./components/testimonialAccordian";
 import VerticalCarousel from "./components/verticalCarousel";
